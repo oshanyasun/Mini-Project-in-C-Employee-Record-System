@@ -102,7 +102,14 @@ int main()
             }
             break;
         case '2':
-            //case 2 methana
+           system("cls");
+           rewind(fp); ///this moves file cursor to start of the file
+           while(fread(&e,recsize,1,fp)==1) /// read the file and fetch the record one record per fetch
+            {
+           printf("\n%s %d %.2f",e.name,e.age,e.bs); /// print the name, age and basic salary
+            }
+           getch();
+           break;
 
         case '3':  /// if user press 3 then do editing existing record
            //case 3 methana
